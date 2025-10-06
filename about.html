@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sachin International</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+				  <link href="img/Sachin-International-New-Logo-1.png.png" rel="icon">
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+       <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>inquiry@sachininternational.in</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>77-67-98-98-98</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle"      href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt=""></h1> -->
+                    <img src="img/Sachin-International-New-Logo-1.png.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                      <a href="index.html" class="nav-item nav-link active">Home</a>
+                      <a href="about.html" class="nav-item nav-link">About</a>
+                       <a href="service.html" class="nav-item nav-link">Our Service</a>
+					 <a href="Holiday.html" class="nav-item nav-link">Holiday Packages</a>
+					 <a href="comingsoon.html" class="nav-item nav-link">Gallery</a>
+					<a href="Franchise.html" class="nav-item nav-link">Our Franchise </a>
+                       
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+                    <li class="breadcrumb-item active text-secondary">About</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- About Start -->
+        <div class="container-fluid overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="bg-light rounded">
+                            <img src="img/about-1.jpeg" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
+                            <img src="img/ab.jpeg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h5 class="sub-title pe-3">About the company</h5>
+                        <h1 class="display-5 mb-4" style="font-size:xx-large;">Explore the World with Us: Your Adventure Starts Here!</h1>
+                        <p class="mb-4" style="color:black;">Established in 2007, Sachin International Online Travel Pvt. Ltd. has grown from a modest 90 sq. ft. office into one of India’s most trusted and fast-growing travel companies, with a strong presence both domestically and internationally. Through our owned offices and franchise network, we’ve expanded our reach to serve a global audience while staying deeply rooted in customer-first values. With over 17 years of excellence and the trust of more than 60,000 happy travelers, we are committed to making your travel dreams come true – whether it's a family vacation, group tour, romantic honeymoon, or corporate travel.</p>
+                        <div class="row gy-4 align-items-center">
+                            <div class="col-12 col-sm-6 d-flex align-items-center">
+                                <i class="fas fa-building fa-3x text-secondary"></i>
+                                <h5 class="ms-4">Head Office – Pimpri</h5>
+                            </div>
+                            <div class="col-12 col-sm-6 d-flex align-items-center">
+                                <i class="fas fa-city fa-3x text-secondary"></i>
+                                <h5 class="ms-4">Mumbai Branch</h5>
+                            </div>
+							 <div class="col-12 col-sm-6 d-flex align-items-center">
+                                <i class="fas fa-network-wired fa-3x text-secondary"></i>
+                                <h5 class="ms-4">FC Road, Pune
+</h5>
+                            </div>
+							 <div class="col-12 col-sm-6 d-flex align-items-center">
+                                <i class="fas fa-network-wired fa-3x text-secondary"></i>
+                                <h5 class="ms-4">Vishal Nagar – Baner
+</h5>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="bg-light text-center rounded p-3">
+                                    <div class="mb-2">
+                                        <i class="fas fa-hands-helping fa-4x text-primary"></i>
+                                    </div>
+                                    <h1 class="display-5 fw-bold mb-2" style="font-size:x-large;">18+ yrs </h1>
+                                    <p class="text-muted mb-0">Years of Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-9">
+                                <div class="mb-5">
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> 
+Great Opportunities for Travel & Adventure</p>
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Safety First – Always
+Safety First – Always
+</p>
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Affordable & Friendly Service
+</p>
+  <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Your Trusted Travel Guide
+
+</p>
+  <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Commitment to Excellence
+
+</p>
+  
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                                        <a href="" class="position-relative wow tada" data-wow-delay=".9s">
+                                            <i class="fa fa-phone-alt text-primary fa-3x"></i>
+                                            <div class="position-absolute" style="top: 0; left: 25px;">
+                                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <span class="text-primary">Have any questions?</span>
+                                        <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Free: +91 77679 89898</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Counter Facts Start -->
+        <div class="container-fluid counter-facts py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-passport"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>HAPPY TRAVELLERS</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">50</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>DESTINATIONS COVERS
+</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">150</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>INTERNATIONAL TOURS
+</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">10 </span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>Success Rates
+</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="">100</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter Facts End -->
+
+      
+
+  <div class="container-fluid overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="bg-light rounded">
+                            <img src="img/why.jpeg" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h5 class="sub-title pe-3">Why Choose Us?</h5>
+						<br>
+						<br>
+                        <div class="row gy-4 align-items-center">
+                           
+                           
+                            <div class="col-8 col-md-9">
+                                <div class="mb-5">
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> 
+18+ years of experience in the travel industry
+</p>
+<p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>60,000+ satisfied customers across India and abroad
+</p>
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Affordable & Friendly Service
+</p>
+  <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Trusted franchise and office network
+</p>
+<p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>Trusted franchise and office network </p>
+ <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>Affordable to luxury travel packages </p>
+ <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>Personalized service from expert travel consultants
+ </p>
+ <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> 24/7 customer support
+</p>
+ <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>Transparent, safe, and hassle-free journeys
+ </p>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                  
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+    
+       <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018</a>
+                            <a href="" style="font-size:small;"><i class="fas fa-envelope me-2" ></i> inquiry@sachininternational.in</a>
+                            <a href=""><i class="fas fa-phone me-2"></i>77-67-98-98-98</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube"></i></a>
+
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday :</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <a href="index.html" class=""><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html" class=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="service.html" class=""><i class="fas fa-angle-right me-2"></i> Our Services</a>
+                            <a href="Holiday.html" class=""><i class="fas fa-angle-right me-2"></i> Holiday Pacakages</a>
+                            <a href="Franchise.html" class=""><i class="fas fa-angle-right me-2"></i> Our Franchise</a>
+                            <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Subscribe our newsletter to get our latest update & news.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="text-white"><i class="fas fa-copyright text-light me-2"></i>2025 Copyrights by Sachin International</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white" href="https://gptsoftware.in">GPT SOFTWARE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
