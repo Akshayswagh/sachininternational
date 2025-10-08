@@ -1,1551 +1,1574 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sachin International</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <head>
-        <meta charset="utf-8">
-        <title>Sachin International</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="img/favicon.png" rel="icon" />
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .training-item {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+      }
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-		  <link href="img/Sachin-International-New-Logo-1.png.png" rel="icon">
+      .training-inner {
+        flex-grow: 1;
+        position: relative;
+        overflow: hidden;
+      }
 
-		<style>
+      .training-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
+      .training-content {
+        flex-shrink: 0;
+      }
 
-            .training-item {
-    height: 450px; 
-    display: flex;
-    flex-direction: column;
-}
+      /* responsive adjustments for smaller screens if needed */
+      @media (max-width: 768px) {
+        .training-item {
+          height: 400px;
+        }
+      }
 
-.training-inner {
-    flex-grow: 1;
-    position: relative;
-    overflow: hidden; 
-}
+      @media (max-width: 576px) {
+        .training-item {
+          height: 350px;
+        }
+      }
+    </style>
 
-.training-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
+    <style>
+      .hero-banner {
+        width: 100vw;
+        aspect-ratio: 16 / 6; /* Keep proportional height */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000; /* Optional: background color if image doesn't fill fully */
+      }
 
-.training-content {
-    flex-shrink: 0; 
-}
+      .hero-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Shows full image without cropping */
+        object-position: center;
+        display: block;
+      }
+    </style>
+  </head>
 
-/* responsive adjustments for smaller screens if needed */
-@media (max-width: 768px) {
-    .training-item {
-        height: 400px;
-    }
-}
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-secondary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
 
-@media (max-width: 576px) {
-    .training-item {
-        height: 350px; 
-    }
-}  
-        </style>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+          <div class="d-flex">
+            <a href="#" class="text-muted me-4"
+              ><i class="fas fa-envelope text-secondary me-2"></i
+              >inquiry@sachininternational.in</a
+            >
+            <a href="#" class="text-muted me-0"
+              ><i class="fas fa-phone-alt text-secondary me-2"></i
+              >77-67-98-98-98</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
+              href="https://www.facebook.com/sachininternationalonlinetravels/"
+              ><i class="fab fa-facebook-f fw-normal text-secondary"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
+              href="https://www.instagram.com/sachininternationaltravels/"
+              ><i class="fab fa-instagram fw-normal text-secondary"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-square rounded-circle"
+              href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"
+              ><i class="fab fa-youtube fw-normal text-secondary"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
 
-<style>
- .hero-banner {
-  width: 100vw;
-  aspect-ratio: 16 / 6; /* Keep proportional height */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000; /* Optional: background color if image doesn't fill fully */
-}
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="" class="navbar-brand p-0">
+          <!-- <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt=""></h1> -->
+          <img src="img/Sachin-International-New-Logo-1.png.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Our Service</a>
+            <a href="Holiday.html" class="nav-item nav-link"
+              >Holiday Packages</a
+            >
+            <a href="comingsoon.html" class="nav-item nav-link">Gallery</a>
+            <a href="Franchise.html" class="nav-item nav-link"
+              >Our Franchise
+            </a>
 
-.hero-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Shows full image without cropping */
-  object-position: center;
-  display: block;
-}
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
 
+    <section class="hero-banner">
+      <img src="img/slider-2.jpeg" alt="Hero Banner" />
+    </section>
 
-</style>
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">
+              Search by keyword
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
             </div>
+          </div>
         </div>
-        <!-- Spinner End -->
+      </div>
+    </div>
+    <!-- Modal Search End -->
 
-
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-            <div class="row gx-0 align-items-center">
-                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex">
-                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>inquiry@sachininternational.in</a>
-                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>77-67-98-98-98</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram fw-normal text-secondary"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle"      href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube fw-normal text-secondary"></i></a>
-                    </div>
-                </div>
-               
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="bg-light rounded">
+              <img
+                src="img/about.jpeg"
+                class="img-fluid w-100"
+                style="margin-bottom: -7px"
+                alt="Image"
+              />
+              <!-- <img src="img/about-3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image"> -->
             </div>
-        </div>
-        <!-- Topbar End -->
+          </div>
+          <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+            <h5 class="sub-title pe-3">About the company</h5>
+            <h1 class="display-5 mb-4" style="font-size: x-large">
+              Unlock Global Travel & Thrilling Adventures with Sachin
+              International.
+            </h1>
+            <p class="mb-4">
+              Established in 2007, Sachin International Online Travel Pvt. Ltd.
+              has grown from a modest 90 sq. ft. office into one of India’s most
+              trusted and fast-growing travel companies, with a strong presence
+              both domestically and internationally.
+            </p>
+            <div class="row gy-4 align-items-center">
+              <div class="col-12 col-sm-6 d-flex align-items-center">
+                <i class="fas fa-user-shield fa-3x text-secondary"></i>
+                <h5 class="ms-4">Safety first always</h5>
+              </div>
+              <div class="col-12 col-sm-6 d-flex align-items-center">
+                <i class="fas fa-tags fa-3x text-secondary"></i>
+                <h5 class="ms-4">Low price & friendly</h5>
+              </div>
+              <div class="col-12 col-sm-6 d-flex align-items-center">
+                <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
+                <h5 class="ms-4">Trusted travel guide</h5>
+              </div>
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <!-- <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt=""></h1> -->
-                    <img src="img/Sachin-International-New-Logo-1.png.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                      <a href="index.html" class="nav-item nav-link active">Home</a>
-                      <a href="about.html" class="nav-item nav-link">About</a>
-                       <a href="service.html" class="nav-item nav-link">Our Service</a>
-					 <a href="Holiday.html" class="nav-item nav-link">Holiday Packages</a>
-					 <a href="comingsoon.html" class="nav-item nav-link">Gallery</a>
-					<a href="Franchise.html" class="nav-item nav-link">Our Franchise </a>
-                       
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Navbar & Hero End -->
-
-
-
-
-
-
-
-<section class="hero-banner">
-  <img src="img/slider-2.jpeg" alt="Hero Banner" />
-</section>
-
-
-
-
-  
-
-
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
+              <!-- <div class="col-8 col-md-9"> -->
+              <!-- <div class="mb-5"> -->
+              <!-- <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offer 100 % Genuine Assistance</p> -->
+              <!-- <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> It’s Faster & Reliable Execution</p> -->
+              <!-- <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Accurate & Expert Advice</p> -->
+              <!-- </div> -->
+              <!-- <div class="d-flex flex-wrap"> -->
+              <!-- <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4"> -->
+              <!-- <a href="" class="position-relative wow tada" data-wow-delay=".9s"> -->
+              <!-- <i class="fa fa-phone-alt text-primary fa-3x"></i> -->
+              <!-- <div class="position-absolute" style="top: 0; left: 25px;"> -->
+              <!-- <span><i class="fa fa-comment-dots text-secondary"></i></span> -->
+              <!-- </div> -->
+              <!-- </a> -->
+              <!-- </div> -->
+              <!-- <div class="d-flex flex-column justify-content-center"> -->
+              <!-- <span class="text-primary">Have any questions?</span> -->
+              <!-- <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Free: +0123 456 7890</span> -->
+              <!-- </div> -->
+              <!-- </div> -->
+              <!-- </div> -->
             </div>
+          </div>
         </div>
-        <!-- Modal Search End -->
+      </div>
+    </div>
+    <!-- About End -->
 
-
-
-        <!-- About Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-                        <div class="bg-light rounded">
-                            <img src="img/about.jpeg" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
-                            <!-- <img src="img/about-3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image"> -->
-                        </div>
-                    </div>
-                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-                        <h5 class="sub-title pe-3">About the company</h5>
-                        <h1 class="display-5 mb-4" style="font-size:x-large;">Unlock Global Travel & Thrilling Adventures with Sachin International.</h1>
-                        <p class="mb-4">Established in 2007, Sachin International Online Travel Pvt. Ltd. has grown from a modest 90 sq. ft. office into one of India’s most trusted and fast-growing travel companies, with a strong presence both domestically and internationally.</p>
-                        <div class="row gy-4 align-items-center">
-                            <div class="col-12 col-sm-6 d-flex align-items-center">
-                                <i class="fas fa-user-shield fa-3x text-secondary"></i>
-                                <h5 class="ms-4">Safety first always</h5>
-
-                            </div>
-                            <div class="col-12 col-sm-6 d-flex align-items-center">
-                                <i class="fas fa-tags fa-3x text-secondary"></i>
-                                <h5 class="ms-4">Low price & friendly</h5>
-                            </div>
-							 <div class="col-12 col-sm-6 d-flex align-items-center">
-                                <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
-                                <h5 class="ms-4">Trusted travel guide</h5>
-                            </div>
-                           
-                            <!-- <div class="col-8 col-md-9"> -->
-                                <!-- <div class="mb-5"> -->
-                                    <!-- <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offer 100 % Genuine Assistance</p> -->
-                                    <!-- <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> It’s Faster & Reliable Execution</p> -->
-                                    <!-- <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Accurate & Expert Advice</p> -->
-                                <!-- </div> -->
-                                <!-- <div class="d-flex flex-wrap"> -->
-                                    <!-- <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4"> -->
-                                        <!-- <a href="" class="position-relative wow tada" data-wow-delay=".9s"> -->
-                                            <!-- <i class="fa fa-phone-alt text-primary fa-3x"></i> -->
-                                            <!-- <div class="position-absolute" style="top: 0; left: 25px;"> -->
-                                                <!-- <span><i class="fa fa-comment-dots text-secondary"></i></span> -->
-                                            <!-- </div> -->
-                                        <!-- </a> -->
-                                    <!-- </div> -->
-                                    <!-- <div class="d-flex flex-column justify-content-center"> -->
-                                        <!-- <span class="text-primary">Have any questions?</span> -->
-                                        <!-- <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Free: +0123 456 7890</span> -->
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Counter Facts Start -->
-        <div class="container-fluid counter-facts py-5">
-            <div class="container py-5">
-                <div class="row g-4">
-                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="counter">
-                            <div class="counter-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="counter-content">
-                                <h3>Group Tours</h3>
-                                <!-- <div class="d-flex align-items-center justify-content-center"> -->
-                                    <!-- <span class="counter-value" data-toggle="counter-up">31</span> -->
-                                    <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="counter">
-                            <div class="counter-icon">
-                                <i class="fas fa-suitcase-rolling"></i>
-                            </div>
-                            <div class="counter-content">
-                                <h3>Holiday
-Packages</h3>
-                                <!-- <div class="d-flex align-items-center justify-content-center"> -->
-                                    <!-- <span class="counter-value" data-toggle="counter-up"></span> -->
-                                    <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="counter">
-                            <div class="counter-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="counter-content">
-                                <h3>Corporate
-Tours</h3>
-                                <!-- <div class="d-flex align-items-center justify-content-center"> -->
-                                    <!-- <span class="counter-value" data-toggle="counter-up"></span> -->
-                                    <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="counter">
-                            <div class="counter-icon">
-                                <i class="fas fa-plane-departure"></i>
-                            </div>
-                            <div class="counter-content">
-                                <h3>Honeymoon
-Packages</h3>
-                                <!-- <div class="d-flex align-items-center justify-content-center"> -->
-                                    <!-- <span class="counter-value" data-toggle="counter-up"></span> -->
-                                    <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Counter Facts End -->
-
-
-        <!-- Services Start -->
-        <div class="container-fluid service overflow-hidden pt-5">
-            <div class="container py-5 ">
-                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Our Popular Tours</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">Unleash the Explorer in You – Globally</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/thailand.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Thailand</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Thailand</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">A kingdom of wonder and serenity, where golden temples meet lush jungles. A still more glorious dawn awaits as you sail through emerald waters and find solace in the Land of Smiles.
-											.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/Dubai.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Dubai</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Dubai</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Experience the magic of Dubai on this unforgettable tour! Discover the city’s iconic landmarks like the Burj Khalifa and Palm Jumeirah.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Maldives</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Maldives </h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Escape to paradise with the Amazing Maldives Tour, where crystal-clear waters, white sandy beaches, and luxurious overwater villas await.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Bali</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Bali</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Experience the tropical paradise of Bali, where stunning beaches, lush rice terraces, and vibrant culture await. Discover ancient temples, enjoy thrilling water sports, and relax in luxury resorts.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/4.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Vietnam</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Vietnam</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Embark on an unforgettable journey through Vietnam, a land of breathtaking landscapes, rich history, and vibrant culture.<p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/5.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Singapore</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Singapore</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Discover the vibrant city-state of Singapore on this exciting tour that blends modern marvels with rich cultural heritage. From iconic landmarks like Marina Bay Sands and Gardens by the Bay to bustling neighborhoods.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					 <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/6.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Baku</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Baku</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Discover the charm of Azerbaijan with our Amazing Baku Tour Package! Explore the vibrant city of Baku, where modern architecture meets ancient history. Visit iconic landmarks like the Flame Towers, Maiden Tower, and the stunning Heydar Aliyev Center.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					 <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item">
-                            <div class="service-inner">
-                                <div class="service-img">
-                                    <img src="img/service/7.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                </div>
-                                <div class="service-title">
-                                    <div class="service-title-name">
-                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
-                                            <a href="Holiday.html" class="h4 text-white mb-0">Sri Lanka</a>
-                                        </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="Holiday.html">Explore More</a>
-                                    </div>
-                                    <div class="service-content pb-4">
-                                        <a href="Holiday.html"><h4 class="text-white mb-4 py-3">Sri Lanka</h4></a>
-                                        <div class="px-4">
-                                            <p class="mb-4">Discover the enchanting beauty of Sri Lanka on this unforgettable journey through ancient cities, lush tea plantations, golden beaches, and vibrant wildlife.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="Holiday.html">Explore More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services End -->
-
-
-
-        <!-- Features Start -->
-        <div class="container-fluid features overflow-hidden py-5">
-            <div class="container">
-                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Why Choose Us</h5>
-                    </div>
-                </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-map-marked fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Expertly Curated Tours</h5>
-                                <p class="mb-3">Travel plans crafted by experienced professionals to ensure the best experiences across the globe.</p>
-						   </div>
-                        </div>
-						
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-user-cog fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Personalized Travel Experiences</h5>
-                                <p class="mb-3">Tailor-made itineraries that match your preferences, pace, and passions. <br><br><br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-headset fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Unmatched Customer Support</h5>
-                                <p class="mb-3">Friendly, responsive support before, during, and after your journey — your comfort is our priority. <br><br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-wallet fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Affordable & Transparent Pricing</h5>
-                                <p class="mb-3">Enjoy competitive rates with no hidden charges — world-class travel within your budget.<br><br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-12"> -->
-                        <!-- <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Features</a> -->
-                    <!-- </div> -->
-                </div>
-            </div>
-        </div>
-        <!-- Features End -->
-
-
-
-        <!-- Countries We Offer Start -->
-		
-        <div class="container-fluid country overflow-hidden py-5">
-            <div class="container">
-                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Featured tours</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">Amazing tour places around the world</h1>
-                    <p class="mb-0"></p>
-                </div>
-                <div class="row g-4 text-center">
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/t.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/feature/thailand.jpeg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">THAILAND TOUR</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/kerala.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/india.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">God’s Own Country: Kerela</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/manali.png" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/india.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">Amazing Kullu Manali Tour</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/kashmir.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/india.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">Amazing Kashmir Package</a>
-                            </div>
-                        </div>
-                    </div>
-					<br>
-					<div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/baku.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/baku.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">AMAZING BAKU TOUR PACKAGE</a>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/vietnam.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/vietnam.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">VIETNAM TOUR PACKAGE</a>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/singapore.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/singapore.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">Amazing Singapore Tour</a>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/service/maldives.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/maldives.jpeg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">Amazing Maldives Tour  </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-12"> -->
-                        <!-- <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Countries</a> -->
-                    <!-- </div> -->
-                </div>
-            </div>
-        </div>
-        <!-- Countries We Offer End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial overflow-hidden pb-5">
-            <div class="container py-5">
-                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Our testimonials
-</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">What Our Travelers Say</h1>
-                    <p class="mb-0">Real stories and reviews from happy explorers around the world.</p>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow zoomInDown" data-wow-delay="0.2s">
-                    <div class="testimonial-item">
-                        <div class="testimonial-content p-4 mb-5">
-                            <p class="fs-5 mb-0">
-            Had a fantastic time in Thailand with Sachin International! They’re the best travel agency in Pimpri Chinchwad for group departures—well-organized with superb hotels, food, and hassle-free transfers.             .
-                            </p>
-                            <div class="d-flex justify-content-end">
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                            </div>
-                        </div>
-						  <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
-                                <img class="img-fluid rounded-circle" src="img/testonomial.jpg" alt="img">
-                            </div>
-                        <div class="d-flex">
-                            
-                            <div class="my-auto">
-                                <h5>Meera Nair </h5>
-                                <p class="mb-0">Nashik</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content p-4 mb-5">
-                            <p class="fs-5 mb-0">            We had the most joyful experience with Sachin International during our trip to Thailand on 3rd November. Their excellent service and attention to detail make them the best travel agency in Pimpri Chinchwad. Highly recommend!            
-                            </p>
-                            <div class="d-flex justify-content-end">
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
-                                <img class="img-fluid rounded-circle" src="img/testonomial.jpg" alt="img">
-                            </div>
-                            <div class="my-auto">
-                                <h5>Aarav Sharma  </h5>
-                                <p class="mb-0">Pune</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content p-4 mb-5">
-                            <p class="fs-5 mb-0">
-            We went for an amazing Thailand experience with Sachin International on 3rd November!  Great food, comfortable hotels, and smooth transfers made our trip unforgettable. Sachin International is the best travel agency in Pimpri Chinchwad for group departures. Highly recommended!            .
-                            </p>
-                            <div class="d-flex justify-content-end">
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                                <i class="fas fa-star text-secondary"></i>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
-                                <img class="img-fluid rounded-circle" src="img/testonomial.jpg" alt="img">
-                            </div>
-                            <div class="my-auto">
-                                <h5>Ishita Reddy </h5>
-                                <p class="mb-0">Sambhajinagar</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-
-    <!-- Training Start -->
-        <div class="container-fluid training overflow-hidden bg-light py-5 ">
-            <div class="container py-5">
-                <div class="section-title text-center mb-5 wow fadeInUp " data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Destination lists</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">Go Exotic Places</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s"> <!-- col-xl-4 में बदला गया -->
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/destination/dubai.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">Travel</a>
-                                    <a href="#" class="h4 text-white mb-0">to Dubai</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">Travel to Dubai</h4></a>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s"> <!-- col-xl-4 में बदला गया -->
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/destination/vit.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">Travel</a>
-                                    <a href="#" class="h4 text-white mb-0">to Vietnam</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">Travel to Vietnam</h4></a>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s"> <!-- col-xl-4 में बदला गया -->
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/destination/mal.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">Travel</a>
-                                    <a href="#" class="h4 text-white mb-0">to Malaysia</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">Travel to Malaysia</h4></a>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s"> <!-- col-xl-4 में बदला गया -->
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/destination/thailand.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">Travel</a>
-                                    <a href="#" class="h4 text-white mb-0">to Thailand</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">Travel to Thailand</h4></a>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-					 <div class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s"> <!-- col-xl-4 में बदला गया -->
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/destination/singapore.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">Travel</a>
-                                    <a href="#" class="h4 text-white mb-0">to Singapore</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">Travel to Singapore</h4></a>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-					
-					 <div class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s"> <!-- col-xl-4 में बदला गया -->
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/destination/bali.webp" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">Travel</a>
-                                    <a href="#" class="h4 text-white mb-0">to Bali</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">Travel to Bali</h4></a>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-					
-                </div>
-            </div>
-        </div>
-        <!-- Training End -->
- <div class="container-fluid counter-footer py-5">
-            <div class="container py-5">
-             
-            </div>
-        </div>
-        <!-- Contact Start -->
-        <!-- <div class="container-fluid contact overflow-hidden pb-5"> -->
-            <!-- <div class="container py-5"> -->
-                <!-- <div class="office pt-5"> -->
-                    <!-- <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s"> -->
-                        <!-- <div class="sub-style"> -->
-                            <!-- <h5 class="sub-title text-primary px-3">Recent news feed -->
-<!-- </h5> -->
-                        <!-- </div> -->
-                        <!-- <h1 class="display-5 mb-4">Amazing News & Blog For Every Single Update</h1> -->
-                        <!-- <p class="mb-0"></p> -->
-                    <!-- </div> -->
-                    <!-- <div class="row g-4 justify-content-center"> -->
-                        <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s"> -->
-                            <!-- <div class="office-item p-4"> -->
-                                <!-- <div class="office-img mb-4"> -->
-                                    <!-- <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <!-- </div> -->
-                                <!-- <div class="office-content d-flex flex-column"> -->
-                                    <!-- <h4 class="mb-2">Australia</h4> -->
-                                    <!-- <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a> -->
-                                    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
-                                    <!-- <p class="mb-0">The Complete Guide to Planning Your First International Trip from India.</p> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                        <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s"> -->
-                            <!-- <div class="office-item p-4"> -->
-                                <!-- <div class="office-img mb-4"> -->
-                                    <!-- <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <!-- </div> -->
-                                <!-- <div class="office-content d-flex flex-column"> -->
-                                    <!-- <h4 class="mb-2">Canada</h4> -->
-                                    <!-- <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a> -->
-                                    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
-                                    <!-- <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                        <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s"> -->
-                            <!-- <div class="office-item p-4"> -->
-                                <!-- <div class="office-img mb-4"> -->
-                                    <!-- <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <!-- </div> -->
-                                <!-- <div class="office-content d-flex flex-column"> -->
-                                    <!-- <h4 class="mb-2">United Kingdom</h4> -->
-                                    <!-- <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a> -->
-                                    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
-                                    <!-- <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                        <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s"> -->
-                            <!-- <div class="office-item p-4"> -->
-                                <!-- <div class="office-img mb-4"> -->
-                                    <!-- <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
-                                <!-- </div> -->
-                                <!-- <div class="office-content d-flex flex-column"> -->
-                                    <!-- <h4 class="mb-2">India</h4> -->
-                                    <!-- <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a> -->
-                                    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
-                                    <!-- <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
+    <!-- Counter Facts Start -->
+    <div class="container-fluid counter-facts py-5">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div
+            class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="counter">
+              <div class="counter-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="counter-content">
+                <h3>Group Tours</h3>
+                <!-- <div class="d-flex align-items-center justify-content-center"> -->
+                <!-- <span class="counter-value" data-toggle="counter-up">31</span> -->
+                <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4> -->
                 <!-- </div> -->
-            <!-- </div> -->
-        <!-- </div> -->
-        <!-- Contact End -->
-
-
-
-
-
-<style>
-    /* YouTube Shorts Feed Section Styles */
-.youtube-shorts-feed {
-    background-color: #212121; /* Dark background as in your image */
-    color: #ffffff;
-}
-
-.youtube-shorts-feed .section-title .sub-title {
-    color: #e6e6e6 !important; /* Lighter text for sub-title on dark background */
-}
-
-.youtube-shorts-feed .section-title h1 {
-    color: #ffffff !important;
-}
-
-.youtube-shorts-feed .section-title p {
-    color: #cccccc !important;
-}
-
-.youtube-shorts-item {
-    background-color: #333333; /* Darker background for each short item */
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensures all cards in a row have equal height */
-    transition: transform 0.3s ease;
-    cursor: pointer; /* Indicate that it's clickable */
-}
-
-.youtube-shorts-item:hover {
-    transform: translateY(-5px);
-}
-
-.youtube-shorts-item .shorts-header {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #444444; /* Slightly lighter header background */
-}
-
-.youtube-shorts-item .shorts-profile-pic {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 8px;
-    object-fit: cover;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.youtube-shorts-item .shorts-channel-name {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #ffffff;
-    flex-grow: 1; /* Pushes subscribe button to the right */
-}
-
-.youtube-shorts-item .shorts-subscribe-btn {
-    background-color: #ff0000; /* YouTube red */
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.youtube-shorts-item .shorts-subscribe-btn:hover {
-    background-color: #cc0000;
-}
-
-.youtube-shorts-item .shorts-thumbnail {
-    position: relative;
-    width: 100%;
-    /* Aspect ratio for a vertical video thumbnail (e.g., 9:16) */
-    padding-bottom: 177.77%; /* 16 / 9 * 100% */
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.youtube-shorts-item .shorts-thumbnail img.video-thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the container without distortion */
-}
-
-.youtube-shorts-item .shorts-thumbnail .play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 3rem;
-    opacity: 0.9;
-    pointer-events: none; /* Allows clicks to pass through to the parent .youtube-shorts-item */
-    transition: opacity 0.2s ease;
-}
-
-.youtube-shorts-item:hover .shorts-thumbnail .play-icon {
-    opacity: 1; /* Slightly more visible on hover */
-}
-
-.youtube-shorts-item .shorts-thumbnail .play-icon i {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    padding: 15px 20px;
-}
-
-
-.youtube-shorts-item .shorts-content {
-    flex-grow: 1;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Pushes content to the bottom as in your image */
-}
-
-.youtube-shorts-item .shorts-title {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-    line-height: 1.3;
-}
-
-.youtube-shorts-item .shorts-meta {
-    font-size: 0.8rem;
-    color: #b0b0b0;
-    margin-bottom: 3px;
-}
-
-.youtube-shorts-item .shorts-website {
-    font-size: 0.8rem;
-    color: #17a2b8; /* Your secondary color */
-    text-decoration: none;
-    margin-top: 10px;
-    display: block; /* Ensures it takes its own line */
-}
-
-.youtube-shorts-item .shorts-website:hover {
-    text-decoration: underline;
-}
-
-
-/* Custom Grid for non-Bootstrap layout */
-.youtube-shorts-feed .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -1rem; /* Adjust for padding on columns */
-    margin-right: -1rem; /* Adjust for padding on columns */
-}
-
-.youtube-shorts-feed .col-lg-2,
-.youtube-shorts-feed .col-md-4,
-.youtube-shorts-feed .col-sm-6,
-.youtube-shorts-feed .col-12 {
-    position: relative;
-    width: 100%;
-    padding-left: 1rem; /* Spacing between columns */
-    padding-right: 1rem; /* Spacing between columns */
-    padding-bottom: 2rem; /* Spacing between rows */
-}
-
-/* Responsive widths */
-@media (min-width: 1200px) { /* Extra large devices (desktops) */
-    .youtube-shorts-feed .col-lg-2 {
-        flex: 0 0 16.666667%; /* 6 columns */
-        max-width: 16.666667%;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) { /* Large devices (desktops) */
-    .youtube-shorts-feed .col-lg-2 {
-        flex: 0 0 20%; /* 5 columns */
-        max-width: 20%;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices (tablets) */
-    .youtube-shorts-feed .col-md-4 {
-        flex: 0 0 33.333333%; /* 3 columns */
-        max-width: 33.333333%;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) { /* Small devices (landscape phones) */
-    .youtube-shorts-feed .col-sm-6 {
-        flex: 0 0 50%; /* 2 columns */
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 575.98px) { /* Extra small devices (portrait phones) */
-    .youtube-shorts-feed .col-12 {
-        flex: 0 0 100%; /* 1 column */
-        max-width: 100%;
-    }
-}
-
-/* --- Video Modal Styles --- */
-.video-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 0.3s;
-}
-
-.video-modal-content {
-    position: relative;
-    background-color: #333; /* Dark background for modal content */
-    margin: auto; /* Centered */
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%; /* Adjust width as needed */
-    max-width: 800px; /* Maximum width for the player */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    animation: slideIn 0.3s;
-}
-
-.video-modal-close {
-    color: #aaa;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.video-modal-close:hover,
-.video-modal-close:focus {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.video-modal-body {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-    height: 0;
-    overflow: hidden; /* Important for aspect ratio */
-    margin-top: 20px; /* Space for close button */
-}
-
-.video-modal-body iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes slideIn {
-    from {transform: translateY(-50px); opacity: 0;}
-    to {transform: translateY(0); opacity: 1;}
-}
-</style>
-
-
-
-
-<!-- Traveler Testimonials (YouTube Shorts Style) Start -->
-<div class="container-fluid youtube-shorts-feed overflow-hidden py-5">
-    <div class="container py-5">
-        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="sub-style">
-                <h5 class="sub-title text-primary px-3">Traveler Testimonials</h5>
+              </div>
             </div>
-            <h1 class="display-5 mb-4">Our Best Travel Experience Yet</h1>
-            <p class="mb-0">Hear what our happy travelers have to say about their unforgettable journeys with us!</p>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="counter">
+              <div class="counter-icon">
+                <i class="fas fa-suitcase-rolling"></i>
+              </div>
+              <div class="counter-content">
+                <h3>Holiday Packages</h3>
+                <!-- <div class="d-flex align-items-center justify-content-center"> -->
+                <!-- <span class="counter-value" data-toggle="counter-up"></span> -->
+                <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="counter">
+              <div class="counter-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="counter-content">
+                <h3>Corporate Tours</h3>
+                <!-- <div class="d-flex align-items-center justify-content-center"> -->
+                <!-- <span class="counter-value" data-toggle="counter-up"></span> -->
+                <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="counter">
+              <div class="counter-icon">
+                <i class="fas fa-plane-departure"></i>
+              </div>
+              <div class="counter-content">
+                <h3>Honeymoon Packages</h3>
+                <!-- <div class="d-flex align-items-center justify-content-center"> -->
+                <!-- <span class="counter-value" data-toggle="counter-up"></span> -->
+                <!-- <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Facts End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid service overflow-hidden pt-5">
+      <div class="container py-5">
+        <div
+          class="section-title text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="sub-style">
+            <h5 class="sub-title text-primary px-3">Our Popular Tours</h5>
+          </div>
+          <h1 class="display-5 mb-4">Unleash the Explorer in You – Globally</h1>
         </div>
         <div class="row g-4 justify-content-center">
-            <!-- Video Item 1 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="youtube-shorts-item" data-video-id="VIDEO_ID_1">
-                    <div class="shorts-header">
-                        <img src="img/sachin-international-profile.jpg" alt="Profile" class="shorts-profile-pic">
-                        <span class="shorts-channel-name">Sachin International</span>
-                        <button class="shorts-subscribe-btn">Subscribe</button>
-                    </div>
-                    <div class="shorts-thumbnail">
-                        <img src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
-                        <div class="play-icon"><i class="fa fa-play"></i></div>
-                    </div>
-                    <div class="shorts-content">
-                        <h5 class="shorts-title">Happy Travelers, Happy Us! 🎉 #travel #thailand</h5>
-                        <p class="shorts-meta">Name : Pushpa Chaudhary</p>
-                        <p class="shorts-meta">Profession: Actor</p>
-                        <a href="https://www.sachininternational.com" class="shorts-website" target="_blank">www.sachininternational.com</a>
-                    </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/thailand.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
                 </div>
-            </div>
-
-            <!-- Video Item 2 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="youtube-shorts-item" data-video-id="VIDEO_ID_2">
-                    <div class="shorts-header">
-                        <img src="img/sachin-international-profile.jpg" alt="Profile" class="shorts-profile-pic">
-                        <span class="shorts-channel-name">Sachin International</span>
-                        <button class="shorts-subscribe-btn">Subscribe</button>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0"
+                        >Thailand</a
+                      >
                     </div>
-                    <div class="shorts-thumbnail">
-                        <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
-                        <div class="play-icon"><i class="fa fa-play"></i></div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Thailand</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        A kingdom of wonder and serenity, where golden temples
+                        meet lush jungles. A still more glorious dawn awaits as
+                        you sail through emerald waters and find solace in the
+                        Land of Smiles. .
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
                     </div>
-                    <div class="shorts-content">
-                        <h5 class="shorts-title">Thailand Trip Was Excellent, Excited to Travel the World 🌎</h5>
-                        <p class="shorts-meta">Name : Traveler XYZ</p>
-                        <p class="shorts-meta">Profession: IT Professional</p>
-                        <a href="https://www.sachininternational.com" class="shorts-website" target="_blank">www.sachininternational.com</a>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <!-- Video Item 3 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="youtube-shorts-item" data-video-id="VIDEO_ID_3">
-                    <div class="shorts-header">
-                        <img src="img/sachin-international-profile.jpg" alt="Profile" class="shorts-profile-pic">
-                        <span class="shorts-channel-name">Sachin International</span>
-                        <button class="shorts-subscribe-btn">Subscribe</button>
-                    </div>
-                    <div class="shorts-thumbnail">
-                        <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
-                        <div class="play-icon"><i class="fa fa-play"></i></div>
-                    </div>
-                    <div class="shorts-content">
-                        <h5 class="shorts-title">#Happy Faces, Unforgettable Places #FamilyTripMoments</h5>
-                        <p class="shorts-meta">Name : Jane Doe</p>
-                        <p class="shorts-meta">Profession: Homemaker</p>
-                        <a href="https://www.sachininternational.com" class="shorts-website" target="_blank">www.sachininternational.com</a>
-                    </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/Dubai.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
                 </div>
-            </div>
-
-            <!-- Video Item 4 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="youtube-shorts-item" data-video-id="VIDEO_ID_4">
-                    <div class="shorts-header">
-                        <img src="img/sachin-international-profile.jpg" alt="Profile" class="shorts-profile-pic">
-                        <span class="shorts-channel-name">Sachin International</span>
-                        <button class="shorts-subscribe-btn">Subscribe</button>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0"
+                        >Dubai</a
+                      >
                     </div>
-                    <div class="shorts-thumbnail">
-                        <img src="https://img.youtube.com/vi/VIDEO_ID_4/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
-                        <div class="play-icon"><i class="fa fa-play"></i></div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Dubai</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Experience the magic of Dubai on this unforgettable
+                        tour! Discover the city’s iconic landmarks like the Burj
+                        Khalifa and Palm Jumeirah.
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
                     </div>
-                    <div class="shorts-content">
-                        <h5 class="shorts-title">Over 60,000+ Happy travelers, and growing! #customerreview</h5>
-                        <p class="shorts-meta">Name : John Smith</p>
-                        <p class="shorts-meta">Profession: Entrepreneur</p>
-                        <a href="https://www.sachininternational.com" class="shorts-website" target="_blank">www.sachininternational.com</a>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <!-- Video Item 5 -->
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="youtube-shorts-item" data-video-id="VIDEO_ID_5">
-                    <div class="shorts-header">
-                        <img src="img/sachin-international-profile.jpg" alt="Profile" class="shorts-profile-pic">
-                        <span class="shorts-channel-name">Sachin International</span>
-                        <button class="shorts-subscribe-btn">Subscribe</button>
-                    </div>
-                    <div class="shorts-thumbnail">
-                        <img src="https://img.youtube.com/vi/VIDEO_ID_5/hqdefault.jpg" alt="Video Thumbnail" class="video-thumbnail">
-                        <div class="play-icon"><i class="fa fa-play"></i></div>
-                    </div>
-                    <div class="shorts-content">
-                        <h5 class="shorts-title">Happy Customer Review Video #Vietnam #customerreview...</h5>
-                        <p class="shorts-meta">Name : Nitin Bhandari</p>
-                        <p class="shorts-meta">Profession: Business Owner</p>
-                        <a href="https://www.sachininternational.com" class="shorts-website" target="_blank">www.sachininternational.com</a>
-                    </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/2.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
                 </div>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0"
+                        >Maldives</a
+                      >
+                    </div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Maldives</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Escape to paradise with the Amazing Maldives Tour, where
+                        crystal-clear waters, white sandy beaches, and luxurious
+                        overwater villas await.
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <!-- Add more video items here following the same structure -->
-
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/3.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
+                </div>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0">Bali</a>
+                    </div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Bali</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Experience the tropical paradise of Bali, where stunning
+                        beaches, lush rice terraces, and vibrant culture await.
+                        Discover ancient temples, enjoy thrilling water sports,
+                        and relax in luxury resorts.
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/4.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
+                </div>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0"
+                        >Vietnam</a
+                      >
+                    </div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="#"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Vietnam</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Embark on an unforgettable journey through Vietnam, a
+                        land of breathtaking landscapes, rich history, and
+                        vibrant culture.
+                      </p>
+                      <p>
+                        <a
+                          class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                          href="Holiday.html"
+                          >Explore More</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/5.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
+                </div>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0"
+                        >Singapore</a
+                      >
+                    </div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Singapore</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Discover the vibrant city-state of Singapore on this
+                        exciting tour that blends modern marvels with rich
+                        cultural heritage. From iconic landmarks like Marina Bay
+                        Sands and Gardens by the Bay to bustling neighborhoods.
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/6.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
+                </div>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0">Baku</a>
+                    </div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Baku</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Discover the charm of Azerbaijan with our Amazing Baku
+                        Tour Package! Explore the vibrant city of Baku, where
+                        modern architecture meets ancient history. Visit iconic
+                        landmarks like the Flame Towers, Maiden Tower, and the
+                        stunning Heydar Aliyev Center.
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item">
+              <div class="service-inner">
+                <div class="service-img">
+                  <img
+                    src="img/service/7.jpg"
+                    class="img-fluid w-100 rounded"
+                    alt="Image"
+                  />
+                </div>
+                <div class="service-title">
+                  <div class="service-title-name">
+                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                      <a href="Holiday.html" class="h4 text-white mb-0"
+                        >Sri Lanka</a
+                      >
+                    </div>
+                    <a
+                      class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4"
+                      href="Holiday.html"
+                      >Explore More</a
+                    >
+                  </div>
+                  <div class="service-content pb-4">
+                    <a href="Holiday.html"
+                      ><h4 class="text-white mb-4 py-3">Sri Lanka</h4></a
+                    >
+                    <div class="px-4">
+                      <p class="mb-4">
+                        Discover the enchanting beauty of Sri Lanka on this
+                        unforgettable journey through ancient cities, lush tea
+                        plantations, golden beaches, and vibrant wildlife.
+                      </p>
+                      <a
+                        class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                        href="Holiday.html"
+                        >Explore More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Traveler Testimonials (YouTube Shorts Style) End -->
+    <!-- Services End -->
 
-<!-- The Modal / Lightbox Structure -->
-<div id="videoModal" class="video-modal">
-    <div class="video-modal-content">
-        <span class="video-modal-close">&times;</span>
-        <div class="video-modal-body">
-            <!-- YouTube iframe will be loaded here by JavaScript -->
+    <!-- Features Start -->
+    <div class="container-fluid features overflow-hidden py-5">
+      <div class="container">
+        <div
+          class="section-title text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="sub-style">
+            <h5 class="sub-title text-primary px-3">Why Choose Us</h5>
+          </div>
         </div>
+        <div class="row g-4 justify-content-center text-center">
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="feature-item text-center p-4">
+              <div class="feature-icon p-3 mb-4">
+                <i class="fas fa-map-marked fa-4x text-primary"></i>
+              </div>
+              <div class="feature-content d-flex flex-column">
+                <h5 class="mb-3">Expertly Curated Tours</h5>
+                <p class="mb-3">
+                  Travel plans crafted by experienced professionals to ensure
+                  the best experiences across the globe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="feature-item text-center p-4">
+              <div class="feature-icon p-3 mb-4">
+                <i class="fas fa-user-cog fa-4x text-primary"></i>
+              </div>
+              <div class="feature-content d-flex flex-column">
+                <h5 class="mb-3">Personalized Travel Experiences</h5>
+                <p class="mb-3">
+                  Tailor-made itineraries that match your preferences, pace, and
+                  passions. <br /><br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="feature-item text-center p-4">
+              <div class="feature-icon p-3 mb-4">
+                <i class="fas fa-headset fa-4x text-primary"></i>
+              </div>
+              <div class="feature-content d-flex flex-column">
+                <h5 class="mb-3">Unmatched Customer Support</h5>
+                <p class="mb-3">
+                  Friendly, responsive support before, during, and after your
+                  journey — your comfort is our priority. <br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="feature-item text-center p-4">
+              <div class="feature-icon p-3 mb-4">
+                <i class="fas fa-wallet fa-4x text-primary"></i>
+              </div>
+              <div class="feature-content d-flex flex-column">
+                <h5 class="mb-3">Affordable & Transparent Pricing</h5>
+                <p class="mb-3">
+                  Enjoy competitive rates with no hidden charges — world-class
+                  travel within your budget.<br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12"> -->
+          <!-- <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Features</a> -->
+          <!-- </div> -->
+        </div>
+      </div>
     </div>
-</div>
+    <!-- Features End -->
 
+    <!-- Countries We Offer Start -->
 
-
-
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018</a>
-                            <a href="" style="font-size:small;"><i class="fas fa-envelope me-2" ></i> inquiry@sachininternational.in</a>
-                            <a href=""><i class="fas fa-phone me-2"></i>7767 98 98 98</a>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
-                                <a class="btn mx-1" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn mx-1" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram"></i></a>
-                                <a class="btn mx-1" href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube"></i></a>
-
-							</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Opening Time</h4>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Saturday :</h6>
-                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Our Services</h4>
-                            <a href="index.html" class=""><i class="fas fa-angle-right me-2"></i> Home</a>
-                            <a href="about.html" class=""><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="service.html" class=""><i class="fas fa-angle-right me-2"></i> Our Services</a>
-                            <a href="Holiday.html" class=""><i class="fas fa-angle-right me-2"></i> Holiday Pacakages</a>
-                            <a href="Franchise.html" class=""><i class="fas fa-angle-right me-2"></i> Our Franchise</a>
-                            <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-secondary mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Subscribe our newsletter to get our latest update & news.</p>
-                            <div class="position-relative mx-auto rounded-pill">
-                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid country overflow-hidden py-5">
+      <div class="container">
+        <div
+          class="section-title text-center wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="margin-bottom: 70px"
+        >
+          <div class="sub-style">
+            <h5 class="sub-title text-primary px-3">Featured tours</h5>
+          </div>
+          <h1 class="display-5 mb-4">Amazing tour places around the world</h1>
+          <p class="mb-0"></p>
         </div>
-        <!-- Footer End -->
-
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#" class="text-white"><i class="fas fa-copyright text-light me-2"></i>2025 Copyrights by Sachin International</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="text-white" href="https://gptsoftware.in">GPT SOFTWARE</a>
-                    </div>
-                </div>
+        <div class="row g-4 text-center">
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/t.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/feature/thailand.jpeg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4">THAILAND TOUR</a>
+              </div>
             </div>
+          </div>
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/kerala.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/india.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4"
+                  >God’s Own Country: Kerela</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/manali.png"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/india.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4"
+                  >Amazing Kullu Manali Tour</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/kashmir.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/india.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4">Amazing Kashmir Package</a>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/baku.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/baku.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4"
+                  >AMAZING BAKU TOUR PACKAGE</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/vietnam.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/vietnam.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4">VIETNAM TOUR PACKAGE</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/singapore.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/singapore.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4">Amazing Singapore Tour</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <div class="country-item">
+              <div class="rounded overflow-hidden">
+                <img
+                  src="img/service/maldives.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-flag">
+                <img
+                  src="img/maldives.jpeg"
+                  class="img-fluid rounded-circle"
+                  alt="Image"
+                />
+              </div>
+              <div class="country-name">
+                <a href="#" class="text-white fs-4">Amazing Maldives Tour </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12"> -->
+          <!-- <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Countries</a> -->
+          <!-- </div> -->
         </div>
-        <!-- Copyright End -->
+      </div>
+    </div>
+    <!-- Countries We Offer End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial overflow-hidden pb-5">
+      <div class="container py-5">
+        <div
+          class="section-title text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="sub-style">
+            <h5 class="sub-title text-primary px-3">Our testimonials</h5>
+          </div>
+          <h1 class="display-5 mb-4">What Our Travelers Say</h1>
+          <p class="mb-0">
+            Real stories and reviews from happy explorers around the world.
+          </p>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow zoomInDown"
+          data-wow-delay="0.2s"
+        >
+          <div class="testimonial-item">
+            <div class="testimonial-content p-4 mb-5">
+              <p class="fs-5 mb-0">
+                Had a fantastic time in Thailand with Sachin International!
+                They’re the best travel agency in Pimpri Chinchwad for group
+                departures—well-organized with superb hotels, food, and
+                hassle-free transfers. .
+              </p>
+              <div class="d-flex justify-content-end">
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+              </div>
+            </div>
+            <div
+              class="rounded-circle me-4"
+              style="width: 100px; height: 100px"
+            >
+              <img
+                class="img-fluid rounded-circle"
+                src="img/testonomial.jpg"
+                alt="img"
+              />
+            </div>
+            <div class="d-flex">
+              <div class="my-auto">
+                <h5>Meera Nair</h5>
+                <p class="mb-0">Nashik</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content p-4 mb-5">
+              <p class="fs-5 mb-0">
+                We had the most joyful experience with Sachin International
+                during our trip to Thailand on 3rd November. Their excellent
+                service and attention to detail make them the best travel agency
+                in Pimpri Chinchwad. Highly recommend!
+              </p>
+              <div class="d-flex justify-content-end">
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div
+                class="rounded-circle me-4"
+                style="width: 100px; height: 100px"
+              >
+                <img
+                  class="img-fluid rounded-circle"
+                  src="img/testonomial.jpg"
+                  alt="img"
+                />
+              </div>
+              <div class="my-auto">
+                <h5>Aarav Sharma</h5>
+                <p class="mb-0">Pune</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content p-4 mb-5">
+              <p class="fs-5 mb-0">
+                We went for an amazing Thailand experience with Sachin
+                International on 3rd November! Great food, comfortable hotels,
+                and smooth transfers made our trip unforgettable. Sachin
+                International is the best travel agency in Pimpri Chinchwad for
+                group departures. Highly recommended! .
+              </p>
+              <div class="d-flex justify-content-end">
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+                <i class="fas fa-star text-secondary"></i>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div
+                class="rounded-circle me-4"
+                style="width: 100px; height: 100px"
+              >
+                <img
+                  class="img-fluid rounded-circle"
+                  src="img/testonomial.jpg"
+                  alt="img"
+                />
+              </div>
+              <div class="my-auto">
+                <h5>Ishita Reddy</h5>
+                <p class="mb-0">Sambhajinagar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Training Start -->
+    <div class="container-fluid training overflow-hidden bg-light py-5">
+      <div class="container py-5">
+        <div
+          class="section-title text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="sub-style">
+            <h5 class="sub-title text-primary px-3">Destination lists</h5>
+          </div>
+          <h1 class="display-5 mb-4">Go Exotic Places</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <!-- col-xl-4 में बदला गया -->
+            <div class="training-item">
+              <div class="training-inner">
+                <img
+                  src="img/destination/dubai.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+                <div class="training-title-name">
+                  <a href="#" class="h4 text-white mb-0">Travel</a>
+                  <a href="#" class="h4 text-white mb-0">to Dubai</a>
+                </div>
+              </div>
+              <div class="training-content bg-secondary rounded-bottom p-4">
+                <a href="#"><h4 class="text-white">Travel to Dubai</h4></a>
+                <a
+                  class="btn btn-secondary rounded-pill text-white p-0"
+                  href="#"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <!-- col-xl-4 में बदला गया -->
+            <div class="training-item">
+              <div class="training-inner">
+                <img
+                  src="img/destination/vit.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+                <div class="training-title-name">
+                  <a href="#" class="h4 text-white mb-0">Travel</a>
+                  <a href="#" class="h4 text-white mb-0">to Vietnam</a>
+                </div>
+              </div>
+              <div class="training-content bg-secondary rounded-bottom p-4">
+                <a href="#"><h4 class="text-white">Travel to Vietnam</h4></a>
+                <a
+                  class="btn btn-secondary rounded-pill text-white p-0"
+                  href="#"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <!-- col-xl-4 में बदला गया -->
+            <div class="training-item">
+              <div class="training-inner">
+                <img
+                  src="img/destination/mal.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+                <div class="training-title-name">
+                  <a href="#" class="h4 text-white mb-0">Travel</a>
+                  <a href="#" class="h4 text-white mb-0">to Malaysia</a>
+                </div>
+              </div>
+              <div class="training-content bg-secondary rounded-bottom p-4">
+                <a href="#"><h4 class="text-white">Travel to Malaysia</h4></a>
+                <a
+                  class="btn btn-secondary rounded-pill text-white p-0"
+                  href="#"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <!-- col-xl-4 में बदला गया -->
+            <div class="training-item">
+              <div class="training-inner">
+                <img
+                  src="img/destination/thailand.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+                <div class="training-title-name">
+                  <a href="#" class="h4 text-white mb-0">Travel</a>
+                  <a href="#" class="h4 text-white mb-0">to Thailand</a>
+                </div>
+              </div>
+              <div class="training-content bg-secondary rounded-bottom p-4">
+                <a href="#"><h4 class="text-white">Travel to Thailand</h4></a>
+                <a
+                  class="btn btn-secondary rounded-pill text-white p-0"
+                  href="#"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <!-- col-xl-4 में बदला गया -->
+            <div class="training-item">
+              <div class="training-inner">
+                <img
+                  src="img/destination/singapore.jpg"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+                <div class="training-title-name">
+                  <a href="#" class="h4 text-white mb-0">Travel</a>
+                  <a href="#" class="h4 text-white mb-0">to Singapore</a>
+                </div>
+              </div>
+              <div class="training-content bg-secondary rounded-bottom p-4">
+                <a href="#"><h4 class="text-white">Travel to Singapore</h4></a>
+                <a
+                  class="btn btn-secondary rounded-pill text-white p-0"
+                  href="#"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-md-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.7s"
+          >
+            <!-- col-xl-4 में बदला गया -->
+            <div class="training-item">
+              <div class="training-inner">
+                <img
+                  src="img/destination/bali.webp"
+                  class="img-fluid w-100 rounded"
+                  alt="Image"
+                />
+                <div class="training-title-name">
+                  <a href="#" class="h4 text-white mb-0">Travel</a>
+                  <a href="#" class="h4 text-white mb-0">to Bali</a>
+                </div>
+              </div>
+              <div class="training-content bg-secondary rounded-bottom p-4">
+                <a href="#"><h4 class="text-white">Travel to Bali</h4></a>
+                <a
+                  class="btn btn-secondary rounded-pill text-white p-0"
+                  href="#"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Training End -->
+    <div class="container-fluid counter-footer py-5">
+      <div class="container py-5"></div>
+    </div>
+    <!-- Contact Start -->
+    <!-- <div class="container-fluid contact overflow-hidden pb-5"> -->
+    <!-- <div class="container py-5"> -->
+    <!-- <div class="office pt-5"> -->
+    <!-- <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s"> -->
+    <!-- <div class="sub-style"> -->
+    <!-- <h5 class="sub-title text-primary px-3">Recent news feed -->
+    <!-- </h5> -->
+    <!-- </div> -->
+    <!-- <h1 class="display-5 mb-4">Amazing News & Blog For Every Single Update</h1> -->
+    <!-- <p class="mb-0"></p> -->
+    <!-- </div> -->
+    <!-- <div class="row g-4 justify-content-center"> -->
+    <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s"> -->
+    <!-- <div class="office-item p-4"> -->
+    <!-- <div class="office-img mb-4"> -->
+    <!-- <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt=""> -->
+    <!-- </div> -->
+    <!-- <div class="office-content d-flex flex-column"> -->
+    <!-- <h4 class="mb-2">Australia</h4> -->
+    <!-- <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a> -->
+    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
+    <!-- <p class="mb-0">The Complete Guide to Planning Your First International Trip from India.</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s"> -->
+    <!-- <div class="office-item p-4"> -->
+    <!-- <div class="office-img mb-4"> -->
+    <!-- <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt=""> -->
+    <!-- </div> -->
+    <!-- <div class="office-content d-flex flex-column"> -->
+    <!-- <h4 class="mb-2">Canada</h4> -->
+    <!-- <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a> -->
+    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
+    <!-- <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s"> -->
+    <!-- <div class="office-item p-4"> -->
+    <!-- <div class="office-img mb-4"> -->
+    <!-- <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt=""> -->
+    <!-- </div> -->
+    <!-- <div class="office-content d-flex flex-column"> -->
+    <!-- <h4 class="mb-2">United Kingdom</h4> -->
+    <!-- <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a> -->
+    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
+    <!-- <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s"> -->
+    <!-- <div class="office-item p-4"> -->
+    <!-- <div class="office-img mb-4"> -->
+    <!-- <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt=""> -->
+    <!-- </div> -->
+    <!-- <div class="office-content d-flex flex-column"> -->
+    <!-- <h4 class="mb-2">India</h4> -->
+    <!-- <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a> -->
+    <!-- <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a> -->
+    <!-- <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- Contact End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        
-<script>
 
-    document.addEventListener('DOMContentLoaded', function() {
-    const videoModal = document.getElementById('videoModal');
-    const videoModalClose = document.querySelector('.video-modal-close');
-    const videoModalBody = document.querySelector('.video-modal-body');
-    const youtubeShortsItems = document.querySelectorAll('.youtube-shorts-item');
+   
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-secondary mb-4">Contact Info</h4>
+              <a href=""
+                ><i class="fa fa-map-marker-alt me-2"></i> Aspiro, Office, 101,
+                Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad,
+                Maharashtra 411018</a
+              >
+              <a href="" style="font-size: small"
+                ><i class="fas fa-envelope me-2"></i>
+                inquiry@sachininternational.in</a
+              >
+              <a href=""><i class="fas fa-phone me-2"></i>7767 98 98 98</a>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                <a
+                  class="btn mx-1"
+                  href="https://www.facebook.com/sachininternationalonlinetravels/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn mx-1"
+                  href="https://www.instagram.com/sachininternationaltravels/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn mx-1"
+                  href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-secondary mb-4">Opening Time</h4>
+              <div class="mb-3">
+                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-muted mb-0">Saturday :</h6>
+                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-secondary mb-4">Our Services</h4>
+              <a href="index.html" class=""
+                ><i class="fas fa-angle-right me-2"></i> Home</a
+              >
+              <a href="about.html" class=""
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html" class=""
+                ><i class="fas fa-angle-right me-2"></i> Our Services</a
+              >
+              <a href="Holiday.html" class=""
+                ><i class="fas fa-angle-right me-2"></i> Holiday Pacakages</a
+              >
+              <a href="Franchise.html" class=""
+                ><i class="fas fa-angle-right me-2"></i> Our Franchise</a
+              >
+              <a href="contact.html" class=""
+                ><i class="fas fa-angle-right me-2"></i> Contact Us</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item">
+              <h4 class="text-secondary mb-4">Newsletter</h4>
+              <p class="text-white mb-3">
+                Subscribe our newsletter to get our latest update & news.
+              </p>
+              <div class="position-relative mx-auto rounded-pill">
+                <input
+                  class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
+                  type="text"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+                >
+                  SignUp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
 
-    youtubeShortsItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const videoId = this.dataset.videoId; // Get video ID from data-video-id attribute
-            if (videoId) {
-                // Construct the YouTube embed URL
-                // The 'autoplay=1' parameter starts the video automatically
-                const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&modestbranding=1&rel=0`;
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-white"
+              ><a href="#" class="text-white"
+                ><i class="fas fa-copyright text-light me-2"></i>2025 Copyrights
+                by Sachin International</a
+              >, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-white">
+            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+            Designed By
+            <a class="text-white" href="https://gptsoftware.in">GPT SOFTWARE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
 
-                // Create and append the iframe
-                videoModalBody.innerHTML = `<iframe src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-                
-                videoModal.style.display = 'flex'; // Show the modal
-                document.body.style.overflow = 'hidden'; // Prevent scrolling on body when modal is open
-            }
-        });
-    });
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
 
-    // Close the modal when the close button is clicked
-    videoModalClose.addEventListener('click', function() {
-        videoModal.style.display = 'none';
-        videoModalBody.innerHTML = ''; // Clear the iframe to stop video playback
-        document.body.style.overflow = ''; // Restore body scrolling
-    });
-
-    // Close the modal when clicking outside the modal content
-    videoModal.addEventListener('click', function(event) {
-        if (event.target === videoModal) {
-            videoModal.style.display = 'none';
-            videoModalBody.innerHTML = ''; // Clear the iframe to stop video playback
-            document.body.style.overflow = ''; // Restore body scrolling
-        }
-    });
-
-    // Optional: Close modal with ESC key
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape" && videoModal.style.display === 'flex') {
-            videoModal.style.display = 'none';
-            videoModalBody.innerHTML = ''; // Clear the iframe to stop video playback
-            document.body.style.overflow = ''; // Restore body scrolling
-        }
-    });
-});
-</script>
+   
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -1555,10 +1578,8 @@ Packages</h3>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    </body>
-
+  </body>
 </html>
