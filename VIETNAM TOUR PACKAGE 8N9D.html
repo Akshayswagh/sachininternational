@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sachin International</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+				  <link href="img/favicon.png" rel="icon">
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+       <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>inquiry@sachininternational.in</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>7767 98 98 98</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle"      href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt=""></h1> -->
+                    <img src="img/Sachin-International-New-Logo-1.png.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                      <a href="index.html" class="nav-item nav-link ">Home</a>
+                      <a href="about.html" class="nav-item nav-link ">About</a>
+                       <a href="service.html" class="nav-item nav-link">Our Service</a>
+					 <a href="Holiday.html" class="nav-item nav-link">Holiday Packages</a>
+					 <a href="comingsoon.html" class="nav-item nav-link">Gallery</a>
+					<a href="Franchise.html" class="nav-item nav-link">Our Franchise </a>
+                       
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Holiday Packages</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Holiday Packages</a></li>
+                    <li class="breadcrumb-item  ">VIETNAM TOUR PACKAGE 8N9D</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+       
+
+
+<main style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px;">
+
+    <h1 style="color: #007bff; text-align: center; margin-bottom: 30px;">VIETNAM TOUR PACKAGE</h1>
+    <h2 style="color: #555; text-align: center; margin-bottom: 40px;">With SACHIN INTERNATIONAL ONLINE TRAVELS PVT LTD</h2>
+
+    <section style="background-color: #f8f9fa; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 30px;">
+        <h3 style="color: #007bff; margin-top: 0;">Tour Overview</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;"><strong>Name:</strong> Mr. AMOL DAWNE</li>
+            <li style="margin-bottom: 10px;"><strong>Duration:</strong> 6N/7D</li>
+            <li style="margin-bottom: 10px;"><strong>Date of Travel:</strong> 13 JUL 25 - 19 JUL 25</li>
+            <li style="margin-bottom: 10px;"><strong>Passengers:</strong> 4 Adult</li>
+            <li style="margin-bottom: 10px;"><strong>Destinations:</strong> Hanoi, Ha Long Bay, Da Nang, Ho Chi Minh City</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Hotel Accommodation & Cruise</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <thead>
+                <tr style="background-color: #007bff; color: white;">
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Destination</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Check-in Date</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">No. of Nights</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">3* Hotel Option</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">4* Hotel Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Hanoi</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">13 JUL 25</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">2 N Leisure</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">First Eden Hotel</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">La Casa Hotel</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Ha Long Bay (On Cruise)</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">15 JUL 25</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">1 N</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">La Regina Classic Cruise</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">La Regina Classic Cruise</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Da Nang</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">16 JUL 25</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">3 N</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Fivitel King Hotel</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Cicilia Hotel</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Ho Chi Minh City</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">19 JUL 25</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">2 N</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">White Lotus Hotel</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Happy Life Grand Hotel</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 0.9em; color: #666;">*Based on lowest room type. Subject to change upon availability!</p>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Flight Details</h3>
+        <ul style="list-style: disc; margin-left: 20px; padding: 0;">
+            <li>Mumbai -> Hanoi: 12 JUL</li>
+            <li>Hanoi -> Da Nang: 16 JUL</li>
+            <li>Da Nang --> Ho Chi Minh City: 19 JUL</li>
+            <li>Ho Chi Minh City --> Mumbai</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Package Inclusions</h3>
+        <ul style="list-style: disc; margin-left: 20px; padding: 0;">
+            <li>Return Flight from BOM</li>
+            <li>International flights & domestic flights: Hanoi – Danang - Ho Chi Minh City</li>
+            <li>Vietnam Visa is included</li>
+            <li>07 nights at hotel with breakfast (TWN/DBL/TPL room)</li>
+            <li>01 night on Halong Bay Sharing Cruise (TWN/DBL/TPL cabin) + Meals on board</li>
+            <li>Private transfer during the trip</li>
+            <li>Halong Cruise Sharing Transfer</li>
+            <li>English speaking guide</li>
+            <li>Sightseeing as mentioned into the itinerary</li>
+            <li>Mineral water: 02 bottles of 500ml/ tour day/pax</li>
+            <li>Cable car to visit Bana Hills</li>
+            <li>One-way lift to visit Marble Mountain</li>
+            <li>Boat ticket to visit Trang An: 04 pax/boat</li>
+            <li>Boat ticket to visit My Tho</li>
+            <li>The tour will end before 18:00pm every day</li>
+        </ul>
+    </section>
+
+    <section style="background-color: #fff3cd; border-left: 5px solid #a53381; padding: 20px; margin-bottom: 30px;">
+        <h3 style="color: #dc3545; margin-top: 0;">Exclusions</h3>
+        <ul style="list-style: circle; margin-left: 20px; padding: 0;">
+            <li>5% GST & 5% TCS</li>
+            <li>Early check-in or late check-out</li>
+            <li>Optional Tours</li>
+            <li>Dinner is not included (except on Halong Cruise and specified in itinerary)</li>
+            <li>Drink & Beverage in meals</li>
+            <li>Personal expenses</li>
+            <li>Compulsory tipping (06 USD/pax/day)</li>
+            <li>Other services not mentioned above</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Day Wise Itinerary</h3>
+
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 1: HANOI ARRIVAL – HALF CITY TOUR (D)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Upon arrival at Noi Bai International Airport, guide & driver will pick you up by private car to city center.</li>
+                <li>● Hotel check-in time 14:00. Early check-in NOT included.</li>
+                <li>● Afternoon, enjoy half day city tour of Hanoi: Ho Chi Minh Complex (outside only), Ba Dinh Square, Uncle Ho' Stilt House, One Pillar Pagoda, Tran Quoc Pagoda, Train Street.</li>
+                <li>● Shopping at Old Quarter.</li>
+                <li>● Enjoy the famous Water puppet show at local theatre.</li>
+                <li>● Meals: Indian Dinner.</li>
+                <li>● Overnight in Hanoi.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 2: HANOI – NINH BINH – HOA LU – TRANG AN – HANOI (B/D)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Morning, transfer to Hoa Lu District, Ninh Binh Province (2.5 hour drive).</li>
+                <li>● Discover the first capital of Vietnam. Visit the two old temples dedicated to Dinh Tien Hoang and Le Dynasty kings.</li>
+                <li>● Afternoon, continue to visit Trang An tourist attraction. Take a boat trip to visit cave complex: Sang Cave, Toi Cave, Ba Giot Cave, Nau Ruou, seeing scenery of mountain and rivers – "Ha Long on land of Ninh Binh".</li>
+                <li>● Back to Hanoi.</li>
+                <li>● Meals: Breakfast + Indian Dinner.</li>
+                <li>● Overnight in Hanoi.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 3: HANOI – HALONG BAY O/N CRUISE (B/L/D)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Transfer to Ha Long by private car (no guide).</li>
+                <li>● 12h00 – 12h30: Embark Halong Cruise, welcome drink, safety guidelines, check-in.</li>
+                <li>● 13h15: Lunch while cruising in the magnificent Bay.</li>
+                <li>● 16h00: Join a guided visit to Stalemate Cave.</li>
+                <li>● 17h20: Return to Cruise, enjoy sunset happy hours.</li>
+                <li>● 18h00: Join a Cooking Demonstration & Food Décor Class.</li>
+                <li>● 19h00 – 21h00: Dinner is served on cruise.</li>
+                <li>● 21h00 – 22h00: Happy hours, Squid Fishing, Karaoke or relax.</li>
+                <li>● Note: Itinerary may be subject to change by Cruise brand; local authority or weather without prior notice. No Indian food on cruise, clients can have vegetarian meals instead.</li>
+                <li>● Meals: Breakfast + Lunch + Dinner.</li>
+                <li>● Overnight on Halong Cruise.</li>
+            </ul>
+            <p style="text-align: center; margin-top: 15px;">
+                <!-- Image for Halong Bay Cruise -->
+                
+            </p>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 4: HALONG – HANOI – FLIGHT TO DA NANG (B/Br/D)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● 06h30: Tai-Chi Lesson on sundeck.</li>
+                <li>● 07h00 – 08h00: Breakfast.</li>
+                <li>● 08h00 – 09h00: Climb to the peak of Island for panoramic views, relax on the beach, swim.</li>
+                <li>● 09h00: Return to Cruise for freshening up.</li>
+                <li>● 09h30: Check out cabin, continue roaming towards Bai Tho Mountain.</li>
+                <li>● 10h30: Have early lunch (brunch).</li>
+                <li>● 12.00: Arrive back at Ha Long city for disembarkation.</li>
+                <li>● Transfer back to Hanoi by private car (no guide) to take a flight to Da Nang (no guide).</li>
+                <li>● Note: The Journey of Cruise is for reference only. It may be changed depending on Cruise. No Indian food on cruise, clients can have vegetarian meals instead.</li>
+                <li>● Meals: Breakfast + Brunch + Indian Dinner.</li>
+                <li>● Overnight in Da Nang.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 5: DANANG – SON TRA – MARBLE MOUNTAIN – HOI AN (B/D)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Morning, enjoy a half day city tour in Danang:</li>
+                <li>● Linh Ung Pagoda on Son Tra Peninsula, featuring the tallest Lady Buddha Statue in Vietnam (67 meters).</li>
+                <li>● Marble Mountain: Five limestone mountains with harmonious ecological beauty and spiritual life.</li>
+                <li>● Non Nuoc Stone Carving Village: Admire exquisite sculptures made from stone.</li>
+                <li>● Late afternoon, visit Hoi An Ancient Town – A World Cultural Heritage. Explore Japanese Bridge, Phuc Kien Communal House, Tan Ky Traditional House, Museum, Handicraftsman at work. Free time for shopping.</li>
+                <li>● Back to your hotel in Danang.</li>
+                <li>● Meals: Breakfast + Indian Dinner.</li>
+                <li>● Overnight in Danang.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 6: DA NANG – BANA HILLS – GOLDEN BRIDGE – DA NANG (B/D)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Today we visit Bana Hills by taking Cable Car (5 world scores).</li>
+                <li>● Bana Hills is known as the “green lung” of Da Nang City, offering cool climate and 4 seasons in one day.</li>
+                <li>● French Village: A replica of classical and romantic France.</li>
+                <li>● Golden Bridge: A new Vietnamese-designed bridge, a famous landmark.</li>
+                <li>● Fantasy Park: Free on your own for joining games in the third biggest indoor games zone in Vietnam (2 hours).</li>
+                <li>● Meals: Breakfast + Indian Dinner.</li>
+                <li>● Overnight in Da Nang.</li>
+            </ul>
+            <p style="text-align: center; margin-top: 15px;">
+                <!-- Image for Golden Bridge -->
+                
+            </p>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 7: DA NANG DEPARTURE (B)</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Breakfast, free at leisure then transfer to Airport for flight home (NO GUIDE).</li>
+                <li>● Meals: Breakfast.</li>
+                <li>● END OF ALL SERVICES!!!!</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Price Per Person</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <thead>
+                <tr style="background-color: #007bff; color: white;">
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Pax</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">3* Package Price</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">4* Package Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">2 PAX</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><span style="font-size: 1.1em; font-weight: bold; color: #dc3545;">INR 99,999</span></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><span style="font-size: 1.1em; font-weight: bold; color: #dc3545;">INR 1,03,900</span></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">4 PAX</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><span style="font-size: 1.1em; font-weight: bold; color: #dc3545;">INR 90,900</span></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><span style="font-size: 1.1em; font-weight: bold; color: #dc3545;">INR 96,800</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 0.9em; color: #666;">Based on lowest room type. Subject to change upon availability!</p>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Important Notes</h3>
+        <ul style="list-style: circle; margin-left: 20px; padding: 0;">
+            <li>The timing of sightseeing points shall be fixed by local operator due to traffic and weather conditions, however all points must cover unless amendment or cancellation made by clients themselves (Non-refundable for any cancellation that made by clients).</li>
+            <li>Tour and price are subject to change without notice or in case of deduct number of pax in quoted group.</li>
+            <li>Small deviations in the tour program are sometimes necessary, depending on weather, road conditions, flight schedules and room availability.</li>
+            <li>Supplement charge for room rate in peak dates depends on the hotel category used. Compulsory gala dinner on X’mas, New Year’s Eve & Lunar New Year’s Eve to be advised upon booking. Prices for group of 15 persons up in 5 stars hotels sometime requires to re-quote bases on the hotel policy.</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Transportation (BUS)</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <thead>
+                <tr style="background-color: #007bff; color: white;">
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Group Size</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Kind of Transportation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">1-2 pax</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">4 seater</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">3 pax</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">7 seater</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">4-9 pax</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">16 seater</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section style="background-color: #f8d7da; border-left: 5px solid #dc3545; padding: 20px; margin-bottom: 30px;">
+        <h3 style="color: #dc3545; margin-top: 0;">Cancellation Policy</h3>
+        <ul style="list-style: circle; margin-left: 20px; padding: 0;">
+            <li>21 days before arrival date: 20% of total tour price (GIT)</li>
+            <li>10-20 days before arrival date: 50% of total tour price (FIT/GIT)</li>
+            <li>7 to 10 days before arrival date: 85% of total tour price (FIT / GIT)</li>
+            <li>Less than 7 days before arrival date or no-show: 100% of total tour price</li>
+            <li>Any cancellation due to irresistible reasons such as wars, strikes, earthquakes, etc. will be considered subject to each case.</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 40px; text-align: center;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Bank Details for Payment</h3>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div style="background-color: #e2f0d9; border: 1px solid #a8d695; border-radius: 5px; padding: 20px; margin: 10px; flex: 1; min-width: 280px; text-align: left;">
+                <h4 style="color: #28a745; margin-top: 0;">AXIS BANK</h4>
+                <p><strong>BANK A/C NAME:</strong> SACHIN INTERNATIONAL ONLINE TRAVELS PVT LTD</p>
+                <p><strong>A/C NUMBER:</strong> 922020047635044</p>
+                <p><strong>IFS CODE:</strong> UTIB0002762</p>
+                <p><strong>BRANCH:</strong> THERMAX CHOWK PUNE</p>
+            </div>
+            <div style="background-color: #e1f5fe; border: 1px solid #a7d9f7; border-radius: 5px; padding: 20px; margin: 10px; flex: 1; min-width: 280px; text-align: left;">
+                <h4 style="color: #17a2b8; margin-top: 0;">INDUSIND BANK</h4>
+                <p><strong>BANK A/C NAME:</strong> SACHIN INTERNATIONAL ONLINE TRAVELS PVT LTD</p>
+                <p><strong>A/C NUMBER:</strong> 257767989898</p>
+                <p><strong>IFS CODE:</strong> INDB0000271</p>
+                <p><strong>BRANCH:</strong> PIMPRI CHINCHWAD</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center; margin-top: 30px; color: #666; font-size: 0.9em;">
+        <p><strong>Sachin International Online Travels PVT LTD</strong></p>
+        <p>Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, MIDC, Pimpri Colony, Pimpri-Chinchwad, Maharashtra 411018.</p>
+        <p>Mobile No: 8484870254 / 89568 70251 (Ms Mangal Raut)</p>
+        <p>Thank you for your patronage and ensures a punctual transfer to Airport to catch the flight for your onward Destination.</p>
+    </section>
+
+</main>
+
+
+
+
+
+       <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018</a>
+                            <a href="" style="font-size:small;"><i class="fas fa-envelope me-2" ></i> inquiry@sachininternational.in</a>
+                            <a href=""><i class="fas fa-phone-alt me-2"></i>7767 98 98 98</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube"></i></a>
+
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday :</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <a href="index.html" class=""><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html" class=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="service.html" class=""><i class="fas fa-angle-right me-2"></i> Our Services</a>
+                            <a href="Holiday.html" class=""><i class="fas fa-angle-right me-2"></i> Holiday Pacakages</a>
+                            <a href="Franchise.html" class=""><i class="fas fa-angle-right me-2"></i> Our Franchise</a>
+                            <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Subscribe our newsletter to get our latest update & news.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="text-white"><i class="fas fa-copyright text-light me-2"></i>2025 Copyrights by Sachin International</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white" href="https://gptsoftware.in">GPT SOFTWARE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

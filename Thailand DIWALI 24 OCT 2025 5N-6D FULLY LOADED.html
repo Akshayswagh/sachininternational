@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sachin International</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+				  <link href="img/favicon.png" rel="icon">
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+       <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>inquiry@sachininternational.in</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>7767 98 98 98</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle"      href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt=""></h1> -->
+                    <img src="img/Sachin-International-New-Logo-1.png.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                      <a href="index.html" class="nav-item nav-link ">Home</a>
+                      <a href="about.html" class="nav-item nav-link ">About</a>
+                       <a href="service.html" class="nav-item nav-link">Our Service</a>
+					 <a href="Holiday.html" class="nav-item nav-link">Holiday Packages</a>
+					 <a href="comingsoon.html" class="nav-item nav-link">Gallery</a>
+					<a href="Franchise.html" class="nav-item nav-link">Our Franchise </a>
+                       
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Holiday Packages</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Holiday Packages</a></li>
+                    <li class="breadcrumb-item  ">Thailand DIWALI 24 OCT 2025 5N-6D FULLY LOADED</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+       
+
+<main style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px;">
+
+    <h1 style="color: #007bff; text-align: center; margin-bottom: 30px;">Thailand DIWALI 24 OCT 2025 5N-6D FULLY LOADEDR</h1>
+    <h2 style="color: #555; text-align: center; margin-bottom: 40px;">With SACHIN INTERNATIONAL ONLINE TRAVELS PVT LTD</h2>
+
+    <section style="background-color: #f8f9fa; border-left: 5px solid #007bff; padding: 20px; margin-bottom: 30px;">
+        <h3 style="color: #007bff; margin-top: 0;">Tour Overview</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;"><strong>Duration:</strong> 5N/6D</li>
+            <li style="margin-bottom: 10px;"><strong>Date of Travel:</strong> 24 Oct 2025</li>
+            <li style="margin-bottom: 10px;"><strong>Destinations:</strong> Pattaya (3 Nights) / Bangkok (2 Nights)</li>
+            <li style="margin-bottom: 10px;"><strong>Flights:</strong> PUNE – BANGKOK – PUNE</li>
+            <li style="margin-bottom: 10px;"><strong>Total Tour Cost:</strong> <span style="font-size: 1.2em; font-weight: bold; color: #dc3545;">INR 48,999/- PER PERSON</span></li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Hotel Accommodation</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <thead>
+                <tr style="background-color: #007bff; color: white;">
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Hotel Name</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Type of Room</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Stay</th>
+                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Dates</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Nova Express* Or Similar Pattaya</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Deluxe Room On Dlb Sharing With Breakfast</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">3N PATTAYA</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">24-10-2025 TO 27-10-2025</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;">The Platinum Suite Or Similar Bangkok</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">Deluxe Room On Dlb Sharing With Breakfast</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">2N BANGKOK</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">27-10-2025 TO 29-10-2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Package Inclusions</h3>
+        <ul style="list-style: disc; margin-left: 20px; padding: 0;">
+            <li>Flights PNQ - BKK – PNQ</li>
+            <li>Thailand FREE Visa on Arrival</li>
+            <li>5N stay in above hotels.</li>
+            <li>Daily Breakfast (Except First Day)</li>
+            <li>Alacazer Show 
+                <p style="text-align: center; margin-top: 15px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_my-XD45p7OmFeL5CyYNCurx5x8g0XlOIw&s" alt="Alcazar Show" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </p>
+            </li>
+            <li>Coral Island Tour with Lunch</li>
+            <li>Nong Nooch Village with lunch</li>
+            <li>Tiger park entry ticket</li>
+            <li>Gems Gallery Tour</li>
+            <li>Bangkok city Tour with temple</li>
+            <li>Safari world at Bangkok with lunch</li>
+            <li>All Dinner without transfer (Except Last Day)</li>
+            <li>Airport and Internal Hotel transfer on pvt basis.</li>
+            <li>All Sightseeing on Sic basis.</li>
+        </ul>
+    </section>
+
+    <section style="background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 20px; margin-bottom: 30px;">
+        <h3 style="color: #dc3545; margin-top: 0;">Exclusions</h3>
+        <ul style="list-style: circle; margin-left: 20px; padding: 0;">
+            <li>5% GST & 5 % TCS.</li>
+            <li>Meals that are not mentioned above.</li>
+            <li>Personal Expenses, Driver tipping.</li>
+            <li>Early check-in is subject to availability.</li>
+            <li>Water sport activity at your own.</li>
+            <li>Any expenses of personal nature such as room service, use of mini bar in room, mineral water, laundry, etc.</li>
+            <li>Tips and portages.</li>
+            <li>Any increase in Foreign exchange rates at the time of final payment.</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Day Wise Itinerary</h3>
+
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 1: ARRIVAL IN PATTAYA</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Arrive at BKK Airport, Bangkok.</li>
+                <li>● Transfer to your hotel in Pattaya.</li>
+                <li>● Check-in, freshen up, and unwind.</li>
+                <li>● Enjoying Alacazer Show 
+                    <p style="text-align: center; margin-top: 15px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjYRa6hpmSTc0ruS_x-yOE0oQxJ6WePKzPA&s" alt="Alcazar Show" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </p>
+                </li>
+                <li>● Enjoy Dinner at Indian restaurant</li>
+                <li>● Overnight stay in above hotel.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 2: PATTAYA - ISLAND EXCURSION AND ENTERTAINMENT</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Have breakfast at the hotel.</li>
+                <li>● Depart for Coral Island.</li>
+                <li>● Enjoy water activities on direct payment basis and relax on the beach. 
+                    <p style="text-align: center; margin-top: 15px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9g4wG1AnxFYycUUW0sTuTFU3W0x0Lotpyjw&s" alt="Coral Island" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </p>
+                </li>
+                <li>● Enjoy Dinner at Indian restaurant</li>
+                <li>● Overnight stay in above hotel.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 3: PATTAYA – NONG NOOCH VILLAGE WITH LUNCH</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Breakfast at the hotel.</li>
+                <li>● Tiger Park Entry Ticket 
+                     <p style="text-align: center; margin-top: 15px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRi-DhP1cjT8Gaf3CqLJLu9_trT6y7Z7pPxg&s" alt="Tiger Park" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </p>
+                </li>
+                <li>● Nong Nooch Village with lunch</li>
+                <li>● Enjoy Dinner at Indian restaurant</li>
+                <li>● Overnight stay in above hotel.</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 4: PATTAYA TO BANGKOK CITY TOUR</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Check-out from the hotel after breakfast.</li>
+                <li>● Gems gallery tour</li>
+                <li>● Bangkok city tour on the way. 
+                    <p style="text-align: center; margin-top: 15px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2bzqW-5j7nTvle07hwq85XhTn4KxQuLeCrg&s" alt="Bangkok City Tour" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </p>
+                </li>
+                <li>● Explore the city.</li>
+                <li>● Travel to Bangkok and check-in at your hotel.</li>
+                <li>● Enjoy Dinner at Indian restaurant</li>
+                <li>● Overnight stay in Bangkok hotel</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 5: BANGKOK - SAFARI WORLD AT BANGKOK</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Check out from the Hotel after Breakfast.</li>
+                <li>● Safari world at Bangkok with lunch 
+                    <p style="text-align: center; margin-top: 15px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lfciGapw5iMqqeAm1ljRJG28o6vtfOGHNQ&s" alt="Safari World Bangkok" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </p>
+                </li>
+                <li>● Enjoy Dinner at Indian restaurant</li>
+                <li>● Overnight stay in Bangkok hotel</li>
+            </ul>
+        </div>
+        <div style="background-color: #f0f8ff; border: 1px solid #cce5ff; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+            <h4 style="color: #0056b3; margin-top: 0; margin-bottom: 10px;">DAY 6: BANGKOK - DEPARTURE</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li>● Check out from the Hotel after Breakfast.</li>
+                <li>● Transfer to the BKK airport Bangkok.</li>
+                <li>● Fly back to Pune.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 40px; text-align: center;">
+        <h3 style="color: #007bff; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Bank Details for Payment</h3>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div style="background-color: #e2f0d9; border: 1px solid #a8d695; border-radius: 5px; padding: 20px; margin: 10px; flex: 1; min-width: 280px; text-align: left;">
+                <h4 style="color: #28a745; margin-top: 0;">AXIS BANK</h4>
+                <p><strong>BANK A/C NAME:</strong> SACHIN INTERNATIONAL ONLINE TRAVELS PVT LTD</p>
+                <p><strong>A/C NUMBER:</strong> 922020047635044</p>
+                <p><strong>IFS CODE:</strong> UTIB0002762</p>
+                <p><strong>BRANCH:</strong> THERMAX CHOWK PUNE</p>
+            </div>
+            <div style="background-color: #e1f5fe; border: 1px solid #a7d9f7; border-radius: 5px; padding: 20px; margin: 10px; flex: 1; min-width: 280px; text-align: left;">
+                <h4 style="color: #17a2b8; margin-top: 0;">INDUSIND BANK</h4>
+                <p><strong>BANK A/C NAME:</strong> SACHIN INTERNATIONAL ONLINE TRAVELS PVT LTD</p>
+                <p><strong>A/C NUMBER:</strong> 257767989898</p>
+                <p><strong>IFS CODE:</strong> INDB0000271</p>
+                <p><strong>BRANCH:</strong> PIMPRI CHINCHWAD</p>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <section style="text-align: center; margin-top: 30px; color: #666; font-size: 0.9em;">
+        <p><strong>Sachin International Online Travels PVT LTD</strong></p>
+        <p>Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, MIDC, Pimpri Colony, Pimpri-Chinchwad, Maharashtra 411018.</p>
+        <p>Mobile No: 8484870254 / 89568 70251</p>
+    </section>
+
+</main>
+
+
+
+
+
+
+       <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018</a>
+                            <a href="" style="font-size:small;"><i class="fas fa-envelope me-2" ></i> inquiry@sachininternational.in</a>
+                            <a href=""><i class="fas fa-phone-alt me-2"></i>7767 98 98 98</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href="https://www.facebook.com/sachininternationalonlinetravels/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href="https://www.instagram.com/sachininternationaltravels/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href="https://youtube.com/@sachininternational?si=XE4IAH9JLiniMRVq"><i class="fab fa-youtube"></i></a>
+
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday :</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Our Services</h4>
+                            <a href="index.html" class=""><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="about.html" class=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="service.html" class=""><i class="fas fa-angle-right me-2"></i> Our Services</a>
+                            <a href="Holiday.html" class=""><i class="fas fa-angle-right me-2"></i> Holiday Pacakages</a>
+                            <a href="Franchise.html" class=""><i class="fas fa-angle-right me-2"></i> Our Franchise</a>
+                            <a href="contact.html" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Subscribe our newsletter to get our latest update & news.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="text-white"><i class="fas fa-copyright text-light me-2"></i>2025 Copyrights by Sachin International</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="text-white" href="https://gptsoftware.in">GPT SOFTWARE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
