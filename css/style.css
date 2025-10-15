@@ -7,6 +7,12 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
+.no-hover:hover {
+  /* Remove all hover styles or override with default styles */
+  color: inherit !important;
+  background: inherit !important;
+}
+
 
 #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
