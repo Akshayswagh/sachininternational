@@ -29,6 +29,53 @@
         <link href="css/style.css" rel="stylesheet">
 				  <link href="img/favicon.png" rel="icon">
 
+                  <style>
+        /* Basic styling for the custom popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1050; /* Above Bootstrap modals */
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease;
+        }
+        .popup-overlay.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .popup-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+        .popup-content.success .icon { color: #28a745; }
+        .popup-content.error .icon { color: #dc3545; }
+        .popup-content h3 { margin-bottom: 15px; font-weight: bold; }
+        .popup-content p { margin-bottom: 20px; }
+        .popup-content .btn-close-popup {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup-content .btn-close-popup:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
     </head>
 
     <body>
@@ -174,53 +221,64 @@
                             <h5 class="sub-title text-primary pe-3">Let’s Connect</h5>
                         </div>
                         <h1 class="display-5 mb-4">Send Your Message</h1>
-                        <p class="mb-3"> <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form"></a>.</p>
-                        <form>
-                            <div class="row g-4">
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="phone" class="form-control" id="phone" placeholder="Phone">
-                                        <label for="phone">Your Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="project" placeholder="Project">
-                                        <label for="project">Your Project</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                </div>
+                        <p class="mb-3"> <a class="text-primary fw-bold" href=""></a>.</p>
+                                 <form id="contactForm">
+                    <div class="row g-4">
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                <label for="phone">Your Phone</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="project" name="project" placeholder="Project">
+                                <label for="project">Your Project</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 160px" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit" id="submitBtn">Send Message</button>
+                        </div>
+                    </div>
+                </form>
                     </div>
                 </div>
 
+
+
+                </div>  <!-- Custom Popup Structure -->
+    <div id="statusPopup" class="popup-overlay">
+        <div class="popup-content" id="popupContent">
+            <div class="icon" style="font-size: 3rem;"></div>
+            <h3 id="popupTitle"></h3>
+            <p id="popupMessage"></p>
+            <button class="btn-close-popup" id="closePopupBtn">Close</button>
+        </div>
+    </div>
 
                 <div class="office pt-5">
     <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -407,7 +465,87 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+ <script>
+        // REMEMBER TO REPLACE THIS WITH YOUR DEPLOYED WEB APP URL
+        const GOOGLE_APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby_wwo8jqG6V5DYp6RQFCuuQLRiUdmfo6BlKTkEYq8qZ1cNs3JPpv7YxiFpnjWHvtk/exec';
+        
 
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const statusPopup = document.getElementById('statusPopup');
+        const popupContent = document.getElementById('popupContent');
+        const popupTitle = document.getElementById('popupTitle');
+        const popupMessage = document.getElementById('popupMessage');
+        const closePopupBtn = document.getElementById('closePopupBtn');
+
+        contactForm.addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            submitBtn.disabled = true; // Disable button to prevent multiple submissions
+            submitBtn.textContent = 'Sending...';
+
+            const formData = new FormData(this);
+            const queryParams = new URLSearchParams();
+
+            // Append all form data to queryParams
+            for (let [key, value] of formData.entries()) {
+                queryParams.append(key, value);
+            }
+
+            try {
+                const response = await fetch(GOOGLE_APP_SCRIPT_URL, {
+                    method: 'POST',
+                    body: queryParams // Send as URL-encoded form data
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json(); // Parse the JSON response
+
+                if (data.result === 'success') {
+                    showPopup('success', 'Success!', data.message || 'Your message has been sent successfully.');
+                    contactForm.reset(); // Clear the form on success
+                } else {
+                    showPopup('error', 'Submission Failed', data.message || 'An unknown error occurred.');
+                }
+
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                showPopup('error', 'Network Error', 'Could not connect to the server. Please try again later.');
+            } finally {
+                submitBtn.disabled = false; // Re-enable button
+                submitBtn.textContent = 'Send Message';
+            }
+        });
+
+        function showPopup(type, title, message) {
+            popupContent.className = 'popup-content ' + type; // Add success or error class
+            popupTitle.textContent = title;
+            popupMessage.textContent = message;
+            statusPopup.classList.add('show'); // Show the popup overlay
+
+            // Set icon based on type (using simple text for now, could use Font Awesome)
+            const iconElement = popupContent.querySelector('.icon');
+            if (type === 'success') {
+                iconElement.innerHTML = '&#10003;'; // Checkmark
+            } else {
+                iconElement.innerHTML = '&#x2717;'; // X mark
+            }
+        }
+
+        closePopupBtn.addEventListener('click', function() {
+            statusPopup.classList.remove('show'); // Hide the popup
+        });
+
+        // Close popup if clicking outside the content
+        statusPopup.addEventListener('click', function(event) {
+            if (event.target === statusPopup) {
+                statusPopup.classList.remove('show');
+            }
+        });
+    </script>
         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
